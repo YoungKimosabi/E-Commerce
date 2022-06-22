@@ -39,7 +39,7 @@ def login():
         u = User.query.filter_by(email=email).first()
         if u and u.check_hash(password):
             login_user(u)
-            flash("Welcome to Sab's Shop!", 'success')
+            flash("Welcome to NOT Microcenter!", 'success')
             return redirect(url_for('main.index'))
         flash("Incorrect email & password combination", "danger")
         return render_template("login.html.j2", form=form)
@@ -90,10 +90,10 @@ def shop():
             url = f"http://127.0.0.1:5000/item/{item}"
             response = requests.get(url)
             if not response.ok:
-                flash(f'We had an error on our end. Please try again.', 'danger')
+                flash(f'We had an enexpected error. Please try again.', 'danger')
                 return render_template('one_item.html.j2', form=form)
             if not response.json()['item_name']:
-                flash(f'We had an error loading your request. Check your spelling', 'danger')
+                flash(f'We had an error loading your request. Try not being dyslexic', 'danger')
             
             item_dict={
                 "item_name":item['item_name'],

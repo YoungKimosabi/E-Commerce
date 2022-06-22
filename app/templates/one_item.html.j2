@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block title %}
-Find Products
+Find Items
 {% endblock %}
 
 {% block content %}
@@ -27,7 +27,7 @@ Find Products
 
 {% if item %}
   {% if item in current_user.cart %}
-    <p>We're sorry. This item is out of stock. Please search another item!</p>
+    <p>We're sorry. This item was bought buy another gamer, please try again later.</p>
   {% else %}
     <div class="card" id="one_card">
       <img src="{{item.img}}" class="card-img-top">

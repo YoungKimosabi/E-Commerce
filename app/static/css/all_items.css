@@ -1,16 +1,16 @@
-/* RUGS */
-#rug_cards{
+/* PCs */
+#pc_cards{
     color:rgb(255, 255, 255);
     width: 285px;
 }
 
-#rug_cards img{
+#pc_cards img{
     width: 285px;
     height: 380px;
     align-self: center;
 }
 
-#rug_cards.card-body{
+#pc_cards.card-body{
     height:50px;
 }
 
@@ -23,7 +23,7 @@
 
 }
 
-#rug_cards h5{
+#pc_cards h5{
     height: 50px;
     justify-self: center;
     margin: auto;
@@ -51,12 +51,12 @@
     background-color:rgb(66, 42, 55);
 }
 
-#rug_cards.card{
+#pc_cards.card{
     margin-top: 2%;
     margin-bottom: 2%;
 }
 
-#rug_cards ul{
+#pc_cards ul{
     width: 280px;
     height: 100px;
     font-size: smaller;
@@ -74,6 +74,6 @@
     padding: .6em;
 }
 
-#rug_cards svg{
+#pc_cards svg{
     color: white;
 }
